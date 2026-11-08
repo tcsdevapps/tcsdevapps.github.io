@@ -18,9 +18,9 @@
 </head>
 <body>
 <main>
-<p class="muted"><a href="./">← Tcs Dev</a> · <a href="recipe-tailor-privacy.html" hreflang="en">English version</a></p>
+<p class="muted"><a href="./">← Tcs Dev</a> · <a href="recipe-tailor-privacy.html" hreflang="en">English version</a> · <a href="receta-a-medida-condiciones.html">Condiciones de uso</a></p>
 <h1>Política de privacidad de «Receta a medida»</h1>
-<p class="muted">Última actualización: 22 de octubre de 2026</p>
+<p class="muted">Última actualización: 8 de noviembre de 2026</p>
 
 <section>
 <h2>Quién es el responsable</h2>
@@ -30,9 +30,9 @@
 <section>
 <h2>Resumen</h2>
 <ul>
-  <li>No hay cuentas ni registro, y la app no tiene servidores propios.</li>
+  <li>No hay cuentas ni registro.</li>
   <li>Tus recetas se guardan solo en tu móvil.</li>
-  <li>Las fotos y PDF de recetas se leen en tu propio móvil y no se envían a ningún sitio.</li>
+  <li>Las fotos de recetas se pueden leer de dos formas, a tu elección: con el <strong>lector del móvil</strong> (la foto no sale del teléfono) o con <strong>IA</strong> (la foto se envía cifrada para leerla y no se guarda). Los PDF y archivos de texto se leen siempre en el móvil.</li>
   <li>La app muestra anuncios de Google AdMob, que puede usar datos de tu dispositivo según el consentimiento que des.</li>
 </ul>
 </section>
@@ -45,7 +45,17 @@
 <section>
 <h2>Fotos, cámara y archivos</h2>
 <p>Si eliges leer una receta desde una foto, la cámara o un archivo (imagen, PDF o texto), la app accede solo al archivo que tú seleccionas o compartes. No pide permiso para ver tu galería ni tus archivos.</p>
-<p>El reconocimiento de texto se hace en el propio dispositivo con <strong>ML Kit de Google</strong> (a través de Google Play Services). Las imágenes no se envían a nosotros ni a Google. Las fotos hechas con la cámara desde la app se guardan temporalmente y se borran en cuanto se leen. Para su mantenimiento, ML Kit puede enviar a Google datos técnicos de diagnóstico y uso (modelo del dispositivo, versión del sistema y de la app, rendimiento y errores), sin contenido de las imágenes. Más información en las <a href="https://developers.google.com/ml-kit/terms">condiciones y privacidad de ML Kit</a>.</p>
+<p>Con el <strong>lector del móvil</strong>, el reconocimiento de texto se hace en el propio dispositivo con <strong>ML Kit de Google</strong> (a través de Google Play Services). Las imágenes no se envían a nosotros ni a Google. Las fotos hechas con la cámara desde la app se guardan temporalmente y se borran en cuanto se leen. Para su mantenimiento, ML Kit puede enviar a Google datos técnicos de diagnóstico y uso (modelo del dispositivo, versión del sistema y de la app, rendimiento y errores), sin contenido de las imágenes. Más información en las <a href="https://developers.google.com/ml-kit/terms">condiciones y privacidad de ML Kit</a>.</p>
+</section>
+
+<section>
+<h2>Lectura de fotos con IA (opcional)</h2>
+<p>La primera vez que lees una foto, la app te explica esta opción y eliges si quieres usarla. Puedes cambiarlo en cualquier momento en <em>Ajustes › Leer fotos con IA</em>. Si no la usas, nada de lo que se describe aquí ocurre.</p>
+<p><strong>Qué se envía.</strong> Las fotos de la receta que eliges leer, reducidas y guardadas de nuevo en el móvil antes de enviarlas, de modo que <strong>no llevan la ubicación GPS ni otros datos ocultos</strong> (modelo del móvil, fecha…). Junto a ellas se envía un identificador aleatorio de la instalación, creado por la app y que no te identifica (cambia si reinstalas la app), y, como en cualquier conexión a internet, la dirección IP del móvil. El envío va cifrado (HTTPS).</p>
+<p><strong>A quién y para qué.</strong> Las fotos llegan a nuestro servidor, alojado en <strong>Cloudflare</strong>, que las pasa al servicio de IA de <strong>Anthropic</strong> (modelo Claude) solo para transcribir la receta. La receta leída vuelve a tu móvil, donde la revisas antes de guardarla. Anthropic no usa estos datos para entrenar sus modelos y, según sus <a href="https://platform.claude.com/docs/en/manage-claude/api-and-data-retention">condiciones de conservación de datos</a>, no los conserva salvo en casos limitados (por obligación legal o si sus sistemas de seguridad detectan un posible abuso).</p>
+<p><strong>Qué guardamos.</strong> Nuestro servidor <strong>no guarda las fotos ni el texto de las recetas</strong>. Solo lleva un contador de lecturas por identificador de instalación y por dirección IP para aplicar el límite diario, que se borra cada día, y registros técnicos sin contenido (por ejemplo, cuántas fotos tenía una lectura y cuánto tardó), que Cloudflare conserva unos días.</p>
+<p><strong>Comprobación de la app.</strong> Para que el servidor solo atienda a la app original instalada desde Google Play, la app pide a Google un token de <strong>Play Integrity</strong>, que Google genera con información sobre la app y la integridad del dispositivo y que el servidor comprueba con Google. Más información en la <a href="https://developer.android.com/google/play/integrity/overview">documentación de Play Integrity</a>.</p>
+<p>Cloudflare y Anthropic actúan como encargados del tratamiento y pueden tratar los datos fuera del Espacio Económico Europeo (por ejemplo, en Estados Unidos), con las garantías que prevé el RGPD, como las cláusulas contractuales tipo de la Comisión Europea. Más información en las políticas de privacidad de <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare</a> y <a href="https://www.anthropic.com/legal/privacy">Anthropic</a>.</p>
 </section>
 
 <section>
@@ -66,7 +76,7 @@
 
 <section>
 <h2>Base legal y conservación</h2>
-<p>Los datos de las recetas se tratan en tu dispositivo para prestar el servicio que pides. La publicidad personalizada se basa en tu consentimiento y la no personalizada en el interés legítimo de financiar la app gratuita. No conservamos datos personales en servidores propios.</p>
+<p>Los datos de las recetas se tratan en tu dispositivo para prestar el servicio que pides. La lectura de fotos con IA se basa en tu elección de usarla para leer la receta que nos pides (prestación del servicio) y el límite diario en el interés legítimo de evitar abusos y mantener el servicio. La publicidad personalizada se basa en tu consentimiento y la no personalizada en el interés legítimo de financiar la app gratuita. No conservamos fotos ni recetas en nuestro servidor; solo los contadores diarios y registros técnicos descritos arriba.</p>
 </section>
 
 <section>
@@ -76,7 +86,7 @@
 
 <section>
 <h2>Tus derechos</h2>
-<p>Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a <a href="mailto:tcsdev.apps@gmail.com">tcsdev.apps@gmail.com</a>. Para los datos que tratan Google AdMob y ML Kit, puedes dirigirte también a Google. Si consideras que no se han respetado tus derechos, puedes reclamar ante la Agencia Española de Protección de Datos (<a href="https://www.aepd.es">www.aepd.es</a>).</p>
+<p>Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a <a href="mailto:tcsdev.apps@gmail.com">tcsdev.apps@gmail.com</a>. Para los datos que tratan Google AdMob, ML Kit y Play Integrity, puedes dirigirte también a Google, y para la lectura con IA, a Cloudflare y Anthropic. Si consideras que no se han respetado tus derechos, puedes reclamar ante la Agencia Española de Protección de Datos (<a href="https://www.aepd.es">www.aepd.es</a>).</p>
 </section>
 
 <section>
